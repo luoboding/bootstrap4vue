@@ -1,0 +1,43 @@
+{
+  "name": "vue-components-rollup",
+  "version": "1.0.0",
+  "description": "vuejs 2.0 components rollup",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/coloseo/vue-components-rollup.git",
+    "type": "git"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js,.vue components config test",
+    "iife": "rollup --config config/rollup.config.js --env iife",
+    "cjs": "rollup --config config/rollup.config.js --env cjs",
+    "es": "rollup --config config/rollup.config.js --env es",
+    "test": "./node_modules/karma/bin/karma start config/karma.config.js"
+  },
+  "author": "Ging <wu.tongqing@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-external-helpers": "^6.18.0",
+    "babel-preset-es2015-rollup": "^1.2.0",
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb-base": "^9.0.0",
+    "eslint-plugin-html": "^1.5.5",
+    "eslint-plugin-import": "^2.0.1",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-rollup-plugin": "^0.2.4",
+    "rollup": "^0.36.1",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-commonjs": "^5.0.5",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-uglify": "^1.0.1",
+    "rollup-plugin-vue2": "^0.4.0",
+    "vue": "^2.0.3",
+    "yargs": "^6.3.0"
+  },
+  "peerDependencies": {
+    "vue": "^2.0.3"
+  }
+}
