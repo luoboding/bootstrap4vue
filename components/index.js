@@ -1,6 +1,6 @@
-import MyComponent from './MyComponent.vue';
 
+import Alert from './Alert.vue';
 const VueStrap = [
-  MyComponent,
+  Alert,
 ];
 export default VueStrap;

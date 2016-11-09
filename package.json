@@ -12,7 +12,8 @@
     "iife": "rollup --config config/rollup.config.js --env iife",
     "cjs": "rollup --config config/rollup.config.js --env cjs",
     "es": "rollup --config config/rollup.config.js --env es",
-    "test": "./node_modules/karma/bin/karma start config/karma.config.js"
+    "test": "./node_modules/karma/bin/karma start config/karma.config.js",
+    "demo": "rollup --config ./example/config/rollup.config.js --watch"
   },
   "author": "Ging <wu.tongqing@gmail.com>",
   "license": "MIT",
@@ -32,8 +33,10 @@
     "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-commonjs": "^5.0.5",
     "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-serve": "^0.1.0",
     "rollup-plugin-uglify": "^1.0.1",
     "rollup-plugin-vue2": "^0.4.0",
+    "rollup-watch": "^2.5.0",
     "vue": "^2.0.3",
     "yargs": "^6.3.0"
   },

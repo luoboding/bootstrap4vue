@@ -6,7 +6,7 @@
     'alert-info'   : (type === 'info'),
     'in'           : show
     }" role='alert'>
-    <button type="button" class="close" data-dismiss="alert" @click='close'>
+    <button type="button" class="close" data-dismiss="alert" @click='show=false'>
       <span aria-hidden="true">×</span>
       <span class="sr-only">Close</span>
     </button>
@@ -26,11 +26,6 @@ export default {
       type: Boolean,
       default: true,
       twoWay: true
-    }
-  },
-  methods: {
-    close: function() {
-      this.show = false;
     }
   }
 }
